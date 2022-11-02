@@ -25,7 +25,7 @@ img{
 }
 
 .overflow{
-    height: 800px;
+    height: 785px;
     overflow: auto;
 }
 
@@ -44,9 +44,9 @@ img{
     font-size: 10px;
 }
 
-.provaz{
+.chat{
     position: absolute;
-    bottom: 30px;
+    top: 900px;
 }
 
 .colore{
