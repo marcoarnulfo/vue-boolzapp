@@ -5,5 +5,17 @@
 }
 
 body{
-    background-color: violet;
+    background-color: palegoldenrod;
+}
+
+img{
+    width: 60px;
+}
+
+.test{
+    font-size: 13px;
+}
+
+.silence{
+    aspect-ratio: 1 / 1;
 }
