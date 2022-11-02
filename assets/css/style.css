@@ -25,12 +25,15 @@ img{
 }
 
 .overflow{
-    height: 600px;
+    height: 800px;
     overflow: auto;
 }
 
+
 .bg_chat{
     background-image: url(/assets/img/bg_chat1.jpg);
+    height: 850px;
+    overflow: auto;
 }
 
 .my_message{
@@ -40,3 +43,17 @@ img{
 .my_message > .text-end{
     font-size: 10px;
 }
+
+.provaz{
+    position: absolute;
+    bottom: 30px;
+}
+
+.colore{
+    background-color: gray;
+    margin-right: 12px;
+    padding: 1rem;
+}
+
+
+
