@@ -19,3 +19,7 @@ img{
 .silence{
     aspect-ratio: 1 / 1;
 }
+
+.light_bg{
+    background-color: #FAFAFA;
+}
