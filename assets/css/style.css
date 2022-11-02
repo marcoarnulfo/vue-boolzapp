@@ -23,3 +23,20 @@ img{
 .light_bg{
     background-color: #FAFAFA;
 }
+
+.overflow{
+    height: 600px;
+    overflow: auto;
+}
+
+.bg_chat{
+    background-image: url(/assets/img/bg_chat1.jpg);
+}
+
+.my_message{
+    background-color: green;
+}
+
+.my_message > .text-end{
+    font-size: 10px;
+}
