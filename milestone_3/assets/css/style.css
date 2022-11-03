@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: palegoldenrod;
+}
+
+img{
+    width: 60px;
+}
+
+.test{
+    font-size: 13px;
+}
+
+.silence{
+    aspect-ratio: 1 / 1;
+}
+
+.light_bg{
+    background-color: #FAFAFA;
+}
+
+.overflow{
+    height: 785px;
+    overflow: auto;
+}
+
+
+.bg_chat{
+    background-image: url(../img/bg_chat1.jpg);
+    height: 850px;
+    overflow: auto;
+}
+
+.my_message{
+    background-color: green;
+}
+
+#withe{
+    background-color: white;
+}
+
+.my_message > .text-end{
+    font-size: 10px;
+}
+
+.chat{
+    position: absolute;
+    top: 900px;
+}
+
+.colore{
+    background-color: gray;
+    margin-right: 12px;
+    padding: 1rem;
+}
+
+
+
