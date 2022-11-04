@@ -168,7 +168,7 @@ createApp({
                         }
                     ],
                 },
-                
+
             ]
         }
     },
@@ -189,6 +189,41 @@ createApp({
         generateMessage() {
             const obj = { date: '13:00', message: 'ok', status: 'received' }
             this.contacts[this.activeContact].messages.push(obj)
+        },
+        search() {
+            const test = this.searchContact.charAt(0).toUpperCase() + this.searchContact.slice(1)
+            console.log(test);
+            //!this.contacts[i].name == test console.log("funziono"); this.contancts[i].visible = false
+            //console.log(this.contacts[0].name);
+            /*
+            for (let index = 0; index < this.contacts.length; index++) {
+                const element = this.contacts[index];
+                //console.log("funziono");
+                //console.log(element);
+                console.log(element.name);
+                console.log(test);
+                if (test === element.name) {
+                    console.log("funziono");
+                } else{
+                    console.log('non funziono');
+                }
+            }
+            */
+            /*
+            if (test == element.name) {
+                console.log("sono dentro if");
+            }
+            */
+
+            // this.contacts.forEach(contact => {
+            //     for (let key in contact) {
+            //         //console.log(`${key}: ${contact[key]}`)
+            //         console.log(contact.name);
+            //         if (test == contact.name) {
+            //             console.log("FUNZIONOZ");
+            //         }
+            //     }
+            // })
         }
     }
 }).mount('#app')
