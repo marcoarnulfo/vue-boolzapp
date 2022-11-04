@@ -53,7 +53,7 @@ createApp({
                 },
                 {
                     name: 'Samuele',
-                    avatar: '_2',
+                    avatar: '_3',
                     visible: true,
                     messages: [
                         {
@@ -75,7 +75,7 @@ createApp({
                 },
                 {
                     name: 'Alessandro B.',
-                    avatar: '_3',
+                    avatar: '_4',
                     visible: true,
                     messages: [
                         {
@@ -92,7 +92,7 @@ createApp({
                 },
                 {
                     name: 'Alessandro L.',
-                    avatar: '_4',
+                    avatar: '_5',
                     visible: true,
                     messages: [
                         {
@@ -109,7 +109,7 @@ createApp({
                 },
                 {
                     name: 'Claudia',
-                    avatar: '_5',
+                    avatar: '_6',
                     visible: true,
                     messages: [
                         {
@@ -131,7 +131,7 @@ createApp({
                 },
                 {
                     name: 'Federico',
-                    avatar: '_6',
+                    avatar: '_7',
                     visible: true,
                     messages: [
                         {
@@ -148,7 +148,7 @@ createApp({
                 },
                 {
                     name: 'Davide',
-                    avatar: '_7',
+                    avatar: '_8',
                     visible: true,
                     messages: [
                         {
@@ -168,29 +168,6 @@ createApp({
                         }
                     ],
                 },
-                {
-                    name: 'Alessio',
-                    avatar: '_7',
-                    visible: true,
-                    messages: [
-                        {
-                            date: '10/01/2020 15:30:55',
-                            message: 'Ciao, andiamo a mangiare la pizza stasera?',
-                            status: 'received'
-                        },
-                        {
-                            date: '10/01/2020 15:50:00',
-                            message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
-                            status: 'sent'
-                        },
-                        {
-                            date: '10/01/2020 15:51:00',
-                            message: 'OK!!',
-                            status: 'received'
-                        }
-                    ],
-                },
-
             ]
         }
     },
