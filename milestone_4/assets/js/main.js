@@ -168,6 +168,28 @@ createApp({
                         }
                     ],
                 },
+                {
+                    name: 'Alessio',
+                    avatar: '_7',
+                    visible: true,
+                    messages: [
+                        {
+                            date: '10/01/2020 15:30:55',
+                            message: 'Ciao, andiamo a mangiare la pizza stasera?',
+                            status: 'received'
+                        },
+                        {
+                            date: '10/01/2020 15:50:00',
+                            message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
+                            status: 'sent'
+                        },
+                        {
+                            date: '10/01/2020 15:51:00',
+                            message: 'OK!!',
+                            status: 'received'
+                        }
+                    ],
+                },
 
             ]
         }
@@ -193,37 +215,15 @@ createApp({
         search() {
             const test = this.searchContact.charAt(0).toUpperCase() + this.searchContact.slice(1)
             console.log(test);
-            //!this.contacts[i].name == test console.log("funziono"); this.contancts[i].visible = false
-            //console.log(this.contacts[0].name);
-            /*
-            for (let index = 0; index < this.contacts.length; index++) {
-                const element = this.contacts[index];
-                //console.log("funziono");
-                //console.log(element);
-                console.log(element.name);
-                console.log(test);
-                if (test === element.name) {
-                    console.log("funziono");
-                } else{
-                    console.log('non funziono');
-                }
-            }
-            */
-            /*
-            if (test == element.name) {
-                console.log("sono dentro if");
-            }
-            */
-
-            // this.contacts.forEach(contact => {
-            //     for (let key in contact) {
-            //         //console.log(`${key}: ${contact[key]}`)
-            //         console.log(contact.name);
-            //         if (test == contact.name) {
-            //             console.log("FUNZIONOZ");
-            //         }
-            //     }
-            // })
+            this.contacts = this.contacts.map(element => {
+                element.visible = element.name.includes(test)
+                // if (!element.name.includes(test)) {
+                //     element.visible = false;
+                // } else {
+                //     element.visible = true;
+                // }
+                return element
+            })
         }
     }
 }).mount('#app')

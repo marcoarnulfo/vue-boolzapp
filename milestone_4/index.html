@@ -48,15 +48,15 @@
                         <div class="light_bg">
                             <div class="input-group p-2">
                                 <div class="input-group-text px-4"><i class="fa-solid fa-magnifying-glass"></i></div>
-                                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat"  v-model="searchContact" @keyup.enter="search(i)">
+                                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat"  v-model="searchContact" @keyup="search()"> 
                             </div>
                         </div>
                     </div>
                     <div class="contacts overflow bg-light">
                         <div v-for="(element, i) in contacts" class="contact px-2"
-                            v-bind:class="this.activeContact === i ? 'bg-secondary' : 'bg-light' "
+                            v-bind:class="activeContact === i ? 'bg-secondary' : 'bg-light' "
                             @click="changeContact(i)">
-                            <div class="d-flex py-2">
+                            <div class="d-flex py-2" v-if="element.visible">
                                 <span>
                                     <img class="rounded-circle" :src="`./assets/img/avatar${element.avatar}.jpg`"
                                         alt="">
